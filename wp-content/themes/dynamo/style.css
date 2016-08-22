@@ -1,0 +1,805 @@
+/*
+Theme Name: DYNAMO
+Theme URL: http://
+Author: Agencia Mixen
+Author URL: http://mixen.mx/
+Description: Tema para el sitio de DYNAMO Fletes y Servicios S.A de C.V.
+Version: 1.0
+Text Domain: Mixen Communication & Web Technology
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400);
+
+@font-face {
+    font-family: HelveticaNeueBold;
+    src: url(fonts/HelveticaNeue-CondensedBold.otf);
+}
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(fonts/HelveticaNeue.woff);
+}
+
+@font-face {
+    font-family: HelveticaNeue-ThCn;
+    src: url(fonts/HelveticaNeue-ThCn.otf);
+}
+
+/* GENERAL STYLES */
+body {
+    font-family: HelveticaNeue, sans-serif;
+}
+
+a {
+    outline: none!important;
+}
+
+.wrapper {
+    padding-top: 115px;
+    overflow: hidden;
+}
+
+.spacing {
+    padding: 100px 10px;
+}
+
+.light-spacing {
+    padding: 50px 10px;
+}
+
+.light-padding-left {
+    padding-left: 5px;
+}
+
+.light-padding-right {
+    padding-right: 5px;
+}
+
+.no-padding-left {
+    padding-left: 0;
+}
+
+.no-padding-right {
+    padding-right: 0;
+}
+
+.heading {
+    font-family: HelveticaNeueBold;
+    font-size: 38px;
+}
+
+.text {
+    font-size: 22px;
+    line-height: 30px;
+    color: #373636;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.black {
+    color: #333333;
+}
+
+.blue {
+    color: #005198;
+}
+
+.divider {
+    height: 6px;
+    width: 132px;
+    margin-bottom: 30px;
+}
+
+.divider-green {
+    background-color: #7fb845;
+}
+
+.divider-white {
+    background-color: #fff;
+}
+
+.btn {
+    border-radius: 0;
+    display: inline-block;
+    min-width: 164px;
+    font-size: 20px;
+    padding: 5px;
+    color: #fff!important;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    transition: all 200ms ease;
+    margin-top: 20px;
+}
+
+.btn.pull-right {
+    z-index: 10;
+    position: relative;
+}
+
+.blue-btn {
+    background-color: #005198;
+}
+
+.blue-btn:hover,
+.blue-btn:focus {
+    background-color: #004786;
+    /*box-shadow: 2px 2px 3px rgba(0,0,0,.5) inset;*/
+}
+
+.white-btn {
+    border: 3px solid #ffffff;
+}
+
+.white-btn:hover {
+    background-color: #fff;
+    color: #262626!important;
+}
+
+.vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.horizontal-align {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.relative-align {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+/* NAVBAR */
+#wpadminbar {
+    top: 115px!important;
+    z-index: 999!important;
+}
+
+#wpadminbar .quicklinks {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 3px solid #7fb845;
+    margin-bottom: 0;
+}
+
+.navbar, .navbar-nav {
+    height: 115px;
+}
+
+.navbar .container-fluid {
+    max-width: 1170px;
+}
+
+.navbar-brand {
+    padding-top: 20px;
+    height: 100%;
+}
+
+.navbar-nav>li>a {
+    font-size: 14px;
+    color: #123b84!important;
+    font-family: Ubuntu, sans-serif;
+}
+
+.navbar-default .navbar-nav>li.active>a,
+.navbar-default .navbar-nav>li.active>a:hover,
+.navbar-default .navbar-nav>li>a:hover {
+    background-color: transparent!important;
+}
+
+.navbar-default .navbar-nav>li>a:after {
+    content: '';
+    position: absolute;
+    bottom: 14px;
+    width: 47px;
+    height: 2px;
+    background-color: transparent;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: background-color 300ms ease;
+    -moz-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
+}
+
+.navbar-default .navbar-nav>li.active>a:after,
+.navbar-default .navbar-nav>li:hover>a:after {
+    background-color: rgba(127, 184, 69, 0.6);
+}
+
+.navbar-nav>li:last-child>a:before {
+    /*content: url(img/icons/phone.jpg);
+    position: absolute;
+    top: 25px;
+    left: 0;*/
+}
+
+.navbar-nav>li:last-child>a>img{
+    padding-right: 3px;
+    margin-top: -2px;
+}
+
+/* BANNER */
+.banner .item img {
+    min-width: 100%;
+    width: auto!important;
+    height: calc(100vh - 97px);
+    max-width: none;
+}
+
+.banner .carousel-caption  {
+    bottom: auto;
+    right: auto;
+    position: absolute;
+    padding: 0;
+    text-shadow: none;
+    text-align: left;
+    display: block;
+    width: 90%;
+}
+
+.banner h1 {
+    font-family: HelveticaNeueBold;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.banner h2 {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.banner .carousel-inner .item {
+    overflow: hidden;
+}
+
+.banner ol li.active {
+    margin: 1px;
+}
+
+.banner ol li {
+    width: 16px!important;
+    height: 16px!important;
+    border-width: 3px;
+    -webkit-transition: background-color 200ms ease;
+    -moz-transition: background-color 200ms ease;
+    transition: background-color 200ms ease;
+}
+
+/* DYNAMO */
+.dynamo, .servicios {
+    background: url(img/background/dynamo.jpg) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.dynamo .container {
+    position: relative;
+}
+
+.dynamo .decoration {
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 480px;
+}
+
+/* RASTREO */
+.rastreo {
+    min-height: initial!important;
+}
+
+.rastreo .parallax img {
+    left: 0;
+}
+
+@media (min-width: 768px) {
+    .modal-rastreo .modal-dialog {
+        width: 900px;
+        margin: 30px auto;
+        max-width: 100vw;
+        padding: 0 15px;
+    }
+}
+
+.modal .modal-content {
+    border-radius: 0;
+}
+
+.modal-rastreo .modal-body {
+    padding: 0;
+}
+
+.modal-rastreo iframe {
+    display: block;
+    width: 100%;
+    height: 500px;
+    max-height: calc(100vh - 50px);
+}
+
+.modal-rastreo .close-dialog {
+    position: absolute;
+}
+
+.loader {
+    border: 10px solid #e3e3e3;
+    border-radius: 50%;
+    border-top: 10px solid #3498db;
+    width: 90px;
+    height: 90px;
+    -webkit-animation: spin 1.2s linear infinite;
+    animation: spin 1.2s linear infinite;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 190px;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* SERVICIOS */
+.servicios .text {
+    line-height: normal;
+}
+
+.servicios .text.blue {
+    max-width: 250px;
+}
+
+.servicios .map {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    z-index: 10;
+}
+
+.servicios img {
+    position: relative;
+    z-index: 0;
+    top: 30px;
+}
+
+.servicios .col-sm-5 {
+    margin-top: 50px;
+}
+
+.servicios .btn {
+    margin: 0;
+}
+
+/* BOLSA DE TRABAJO */
+
+/* CONTACTO */
+.contacto .container {
+    position: relative;
+}
+
+.contacto h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.contacto input[type=text],
+.contacto input[type=email],
+.contacto select,
+.contacto textarea {
+    min-height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #a0a0a0;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #373636;
+}
+
+.contacto textarea {
+    padding-top: 15px;
+    resize: vertical;
+}
+
+.contacto input[type=submit] {
+    border: 0;
+    background-color: #123c85;
+    color: #fff;
+    height: 46px;
+    width: 112px;
+    font-size: 16px;
+}
+
+.contacto .googleMap {
+    position: absolute!important;
+    height: calc(100% + 100px);
+    width: 50vw;
+    top: -50px;
+    left: 50%;
+}
+
+.contacto .text-right {
+    position: relative;
+}
+
+.contacto .ajax-loader {
+    position: absolute;
+    right: 117px;
+    top: 15px;
+}
+
+/* Parallax CSS */
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+}
+
+.parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+}
+
+.parallax img {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    min-width: 1920px;
+    width: 100%;
+    background-position: center;
+    right: 0;
+}
+
+/* FOOTER */
+footer {
+    background: url(img/background/footer.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.footer-top {
+    border-bottom: 1px solid #7fb845;
+}
+
+.footer-top p {
+    font-size: 18px;
+    color: #373636;
+    padding-left: 40px;
+    position: relative;
+}
+
+.footer-top .address:before,
+.footer-top .email:before,
+.footer-top .phone:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.footer-top .address:before,
+.footer-top .email:before {
+}
+
+.footer-top .address:before {
+    content: url(img/icons/marker.png);
+}
+
+.footer-top .email:before {
+    content: url(img/icons/email.png);
+}
+
+.footer-top .phone:before {
+    content: url(img/icons/phone2.png);
+}
+
+.footer-top .phone {
+    font-size: 23px;
+}
+
+.footer-top a.facebook {
+    position: absolute;
+    right: 5vw;
+}
+
+.footer-rights {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.footer-rights p {
+    margin: 0;
+    font-family: 'Myriad Pro';
+    font-size: 14px;
+    font-weight: 500;
+    color: #5a5a60;
+}
+
+.footer-rights .design {
+    font-weight: 400;
+}
+
+.footer-top a,
+.footer-rights a {
+    color: #5a5a60;
+}
+
+.footer-top a:focus,
+.footer-top a:hover,
+.footer-rights a:focus,
+.footer-rights a:hover {
+    color: #7a7a7a;
+    text-decoration: none;
+}
+
+/* RUTAS */
+.rutas .section-banner {
+    background: url(img/background/rutas.jpg) no-repeat center center;
+    background-size: cover;
+    height: 236px;
+}
+
+.rutas .section-banner h1 {
+    margin: 0;
+    font-size: 55px;
+    font-family: HelveticaNeue-ThCn;
+    font-stretch: expanded;
+}
+
+.rutas-map,
+.dynamo {
+    background: url(img/background/rutas-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.rutas-map h3 {
+    font-weight: 600;
+    font-size: 29px;
+    margin-bottom: 50px;
+}
+
+.rutas-map .nav-pills {
+}
+
+.rutas-map .nav-pills>li {
+    width: 14.2857143%;
+    margin: 0!important;
+}
+
+.rutas-map .nav-pills>li>a {
+    background-color: #005198;
+    color: #fff;
+    border-radius: 0!important;
+    margin: 8px;
+}
+
+.rutas-map .nav-pills>li>a:hover {
+    background-color: #1f66a5;
+}
+
+.rutas-map .nav-pills>li.active>a {
+    background-color: #7fb845;
+}
+
+.ruta-table {
+    margin-top: 30px;
+}
+
+.ruta-table-title,
+.ruta-table-body,
+.ruta span.blue {
+    font-family: HelveticaNeue-ThCn;
+}
+
+.ruta-table-title {
+    background-color: #15357e;
+    padding: 5px;
+}
+
+.ruta-table-title h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.ruta-table-body {
+    min-height: 100px;
+    border-left: 2px solid #15357e;
+    border-right: 2px solid #15357e;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.ruta-table-body:nth-child(2) ul {
+    list-style: none;
+}
+
+.ruta-table-body:nth-child(2) ul>li:before {
+    content: "•";
+    color: #ff0000;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.ruta-table-body:last-child ul {
+    list-style: decimal;
+    color: #7fb845;
+}
+
+.ruta-table-body:last-child {
+    border-bottom: 2px solid #15357e;
+}
+
+.rutas span.blue {
+    color: #15357e;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.rutas .footnote {
+    max-width: 250px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width: 1200px) {
+    .navbar-brand img {
+        max-width: 180px;
+    }
+}
+
+@media(max-width: 992px) {
+    .navbar-brand img {
+        max-width: 160px;
+    }
+    .navbar-nav>li>a {
+        font-size: 12px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .servicios img {
+        top: 100px;
+    }
+    .footer-top a.facebook {
+        position: relative;
+        left: 0;
+    }
+    .ruta-table-body {
+        padding-left: 0px;
+    }
+}
+
+@media(max-width: 767px) {
+    .wrapper {
+        padding-top: 50px;
+    }
+    #wpadminbar {
+        top: 50px!important;
+    }
+    .navbar {
+        height: 50px;
+    }
+    .navbar img {
+        height: 45px;
+    }
+    .navbar .nav-img-container:before {
+        border: 0;
+    }
+    .navbar-brand {
+        padding-top: 0;
+    }
+    .navbar-collapse {
+        position: absolute;
+        right: 0;
+    }
+    .navbar-nav {
+        height: auto!important;
+        margin-top: 0;
+        margin-bottom: 0;
+        background: #fff;
+        width: 200px;
+    }
+    .navbar-nav>li {
+        transform: none;
+        text-align: center;
+    }
+    .navbar-nav>li>a {
+        padding: 8px 0;
+    }
+    .navbar-nav>li>a:after {
+        bottom: 8px!important;
+    }
+    .navbar-nav>li:last-child>a:before {
+        left: 32px;
+        top: 15px;
+    }
+    .banner .carousel-inner .item img {
+        height: calc(100vh - 50px);
+    }
+    .servicios .text.blue {
+        max-width: none;
+        text-align: center;
+    }
+    .servicios .map {
+        position: relative;
+        top: 0;
+        margin-bottom: 20px;
+    }
+    .servicios .btn {
+        float: none!important;
+        margin: 0 auto;
+    }
+    .servicios img {
+        top: 0;
+    }
+    .contacto .googleMap {
+        position: relative!important;
+        left: 0;
+        height: 400px;
+        top: 0;
+        margin-top: 15px;
+    }
+    .footer-top img {
+        max-width: 90%;
+        margin-bottom: 15px;
+    }
+    .footer-top p {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-top a.facebook {
+        width: 41px;
+        height: 41px;
+        margin: 0 auto;
+    }
+    .rutas-map .nav-pills>li {
+        width: 25%;
+    }
+    .ruta-table {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 460px) {
+    .rutas-map .nav-pills>li {
+        width: 33.33%;
+    }
+}
