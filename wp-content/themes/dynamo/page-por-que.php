@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="wrapper rutas">
+<div class="wrapper rutas porque">
     <div class="section-banner">
         <h1 class="white vertical-align text-center">¿POR QUÉ ELEGIR DYNAMO?</h1>
     </div>
@@ -33,8 +33,13 @@
                 <li>Patios en Chihuahua, Juárez, Silao, Hermosillo, El Paso.</li>
             </ul>
             <p class="text">
-                - Nuestros patios cuentan con seguridad calificada y sistema cerrado de CCTV, que nos permite resguardar equipo con mercancía de nuestros clientes de una manera segura.
+                - Nuestros patios cuentan con seguridad calificada y sistema cerrado de CCTV, que nos permite resguardar equipo con mercancía de nuestros clientes de una manera segura.<br><br>
             </p>
+            <div class="row no-margin">
+                <div class="col-sm-4"><img src="<?php echo bloginfo('template_url').'/';  ?>img/porque/2.jpg" alt="Fotos" class="img-responsive center-block"></div>
+                <div class="col-sm-4"><img src="<?php echo bloginfo('template_url').'/';  ?>img/porque/1.jpg" alt="Fotos" class="img-responsive center-block"></div>
+                <div class="col-sm-4"><img src="<?php echo bloginfo('template_url').'/';  ?>img/porque/3.jpg" alt="Fotos" class="img-responsive center-block"></div>
+            </div>
         </div>
     </section>
 </div>

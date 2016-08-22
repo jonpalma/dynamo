@@ -569,6 +569,11 @@ footer {
     height: 236px;
 }
 
+.rutas.porque .section-banner {
+    background: url(img/porque/bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
 .rutas .section-banner h1 {
     margin: 0;
     font-size: 55px;
