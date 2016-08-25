@@ -456,6 +456,11 @@ a {
     top: 15px;
 }
 
+.contacto:not(.modal) button {
+    min-width: 140px;
+    margin: 10px 15px;
+}
+
 /* Parallax CSS */
 .parallax-container {
     position: relative;
@@ -524,7 +529,7 @@ footer {
 }
 
 .footer-top .phone {
-    font-size: 23px;
+    font-size: 19px;
 }
 
 .footer-top a.facebook {
@@ -683,6 +688,34 @@ footer {
     margin-right: auto;
 }
 
+.porque .btn {
+    font-family: HelveticaNeue-ThCn, sans-serif;
+    width: 250px;
+    min-width: 0;
+    max-width: 100%;
+    padding: 15px 10px;
+    background-color: #123b84;
+    margin: 20px 0;
+}
+
+.porque .btn img {
+    margin-left: -30px;
+    width: 30px;
+    margin-right: 5px;
+}
+
+.porque .btn:hover {
+    background-color: #103474;
+}
+
+.porque .modal .modal-heading {
+    text-align: center;
+}
+
+.porque .modal .text {
+    font-size: 19px;
+}
+
 @media(max-width: 1200px) {
     .navbar-brand img {
         max-width: 180px;
@@ -711,6 +744,18 @@ footer {
 }
 
 @media(max-width: 767px) {
+    .heading {
+        font-size: 30px;
+    }
+    .text {
+        font-size: 18px;
+    }
+    .divider {
+        margin-bottom: 10px;
+    }
+    .btn {
+        font-size: 15px;
+    }
     .wrapper {
         padding-top: 50px;
     }
@@ -754,6 +799,13 @@ footer {
         left: 32px;
         top: 15px;
     }
+    .banner h1 {
+        font-size: 30px;
+    }
+    .banner h2 {
+        font-size: 20px;
+        line-height: normal;
+    }
     .banner .carousel-inner .item img {
         height: calc(100vh - 50px);
     }
@@ -773,12 +825,16 @@ footer {
     .servicios img {
         top: 0;
     }
+    .contacto h2 {
+        font-size: 20px;
+    }
     .contacto .googleMap {
         position: relative!important;
         left: 0;
         height: 400px;
         top: 0;
         margin-top: 15px;
+        width: 100%;
     }
     .footer-top img {
         max-width: 90%;

@@ -35,8 +35,8 @@
                             <div class="col-lg-8 col-md-9">
                                 <h1>“LLEGAMOS EN PUNTO”</h1>
                                 <div class="divider divider-white"></div>
-                                <h2>Ofrecemos la mejor alternativa del mercado en transporte de mercancías, maximizando los beneficios para nuestros clientes.</h2>
-                                <a href="#modal-cotiza" data-toggle="modal" data-target="#modal-cotiza" class="btn white-btn">COTIZA</a>
+                                <h2>Todos los procesos de Dynamo están alineados a cumplir con los requerimientos de nuestros clientes, mismos que tenemos bajo un sistema de gestión de calidad y seguridad, el cual nos permite trabajar bajo un esquema de medición y mejora continua.</h2>
+                                <a href="por-que" class="btn white-btn">¿POR QUÉ ELEGIR DYNAMO?</a>
                             </div>
                         </div>
                     </div>
@@ -193,6 +193,10 @@
             <div class="col-sm-6">
                 <h1 class="heading black">CONTACTO</h1>
                 <div class="divider divider-green"></div>
+                <div class="row no-margin">
+                    <button class="btn blue-btn" onclick="moveToChihuahua()">Chihuahua</button>
+                    <button class="btn blue-btn" onclick="moveToJuarez()">Juárez</button>
+                </div>
                 <h2 class="black">¿CÓMO PODEMOS AYUDARTE?</h2>
                 <?php echo do_shortcode('[contact-form-7 id="4" title="Formulario de Contacto"]'); ?>
             </div>

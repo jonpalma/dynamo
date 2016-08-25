@@ -19,25 +19,25 @@ $('iframe').load(function () {
 $('.modal').on('hidden.bs.modal', function () {
     $(this).find('iframe').attr('src','')
     $('.loader').css('display', 'block');
-})
+});
 
 /* 
 	PAGE LOAD WITH HASH OFFSET 
 */
 (function($, window) {
-    $navbar_height = $('.navbar').height();
-    var adjustAnchor= function() {
-        var $anchor = $(':target'),
-            fixedElementHeight = $navbar_height;
-        if ($anchor.length > 0) {
-            $('html, body')
-                .stop()
-                .animate({
-                scrollTop: $anchor.offset().top - fixedElementHeight
-            }, 800);
-        }
-    };
-    $(window).on('hashchange load', function() {
-        adjustAnchor();
-    });
-})(jQuery, window)
+	$navbar_height = $('.navbar').height();
+	var adjustAnchor= function() {
+		var $anchor = $(':target'),
+			fixedElementHeight = $navbar_height;
+		if ($anchor.length > 0) {
+			$('html, body')
+				.stop()
+				.animate({
+				scrollTop: $anchor.offset().top - fixedElementHeight
+			}, 800);
+		}
+	};
+	$(window).on('hashchange load', function() {
+		adjustAnchor();
+	});
+})(jQuery, window);

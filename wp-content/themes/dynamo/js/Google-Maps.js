@@ -7,7 +7,7 @@ function initialize() {
 	if( $('#googleMap').attr('position') == 'dynamo' ) {
 		var $lat = 28.749181,
 			$long = -106.159923,
-			$title = 'DYNAMO';
+			$title = 'Dynamo Fletes';
 	}
 	
 	var map_canvas = document.getElementById('googleMap');
@@ -29,9 +29,27 @@ function initialize() {
 		title: $title,
 		url: 'http://maps.google.com/maps?q=loc:'+String($lat)+','+String($long)
 	});
+
+	var markerJuarez = new google.maps.Marker({
+		position: new google.maps.LatLng(31.638057, -106.409870),
+		map: map,
+		title: $title,
+		url: 'http://maps.google.com/maps?q=loc:31.638057,-106.409870'
+	});
 	
 	google.maps.event.addListener(marker, 'click', function() {
-		/*window.location.href = this.url;*/
 		window.open(this.url,'_blank');
 	});
+    
+	google.maps.event.addListener(markerJuarez, 'click', function() {
+		window.open(this.url,'_blank');
+	});
+}
+
+function moveToChihuahua() {
+	map.panTo(new google.maps.LatLng(28.749181, -106.159923));
+}
+
+function moveToJuarez() {
+	map.panTo(new google.maps.LatLng(31.638057, -106.409870));
 }
