@@ -307,6 +307,11 @@ a {
     height: 480px;
 }
 
+.dynamo .col-sm-7 {
+    position: relative;
+    z-index: 10;
+}
+
 /* RASTREO */
 .rastreo {
     min-height: initial!important;

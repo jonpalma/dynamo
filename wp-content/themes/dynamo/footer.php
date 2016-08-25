@@ -9,7 +9,7 @@
                     </div>
                     <div class="col-sm-5">
                         <p class="address">
-                            Parque Industrial Impulso, C.P. 31109 Chihuahua,Chih.
+                            Av. Impulso #2608 Parque Industrial Impulso, C.P. 31109 Chihuahua,Chih.
                         </p>
                         <p>
                             Av. Miguel de la Madrid #7951 Col. Lote Bravo, C.P. 32696 Cd. Juárez, Chih.
@@ -18,8 +18,8 @@
                             <a href="mailto:ventas@dynamofletes.com">ventas@dynamofletes.com</a><br>
                         </p>
                         <p class="phone">
-                            Chihuahua: (614) 543.0309<br>
-                            Juárez: (656) 843.4043<br>
+                            Chihuahua: +52 (614) 543.0309<br>
+                            Juárez: +52 (656) 843.4043<br>
                             01.800.8.DYNAMO
                             <a href="https://www.facebook.com/DynamoFletes/" target="_blank" class="facebook vertical-align"><img src="<?php echo bloginfo('template_url') . '/'; ?>img/footer/facebook.png" alt="facebook"></a>
                         </p>
